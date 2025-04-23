@@ -1773,14 +1773,14 @@
 				}
 			}
 		},
-		"VPCPeringConnectionID": {
+		"VPCPeeringConnectionID": {
 			"Value": {
 				"Ref": "VPCPeeringConnection"
 			},
-			"Description": "VPC Pering ConnectionID",
+			"Description": "VPC Peering ConnectionID",
 			"Export": {
 				"Name": {
-					"Fn::Sub": "${AWS::StackName}-VPCPeringConnectionID"
+					"Fn::Sub": "${AWS::StackName}-VPCPeeringConnectionID"
 				}
 			}
 		},
