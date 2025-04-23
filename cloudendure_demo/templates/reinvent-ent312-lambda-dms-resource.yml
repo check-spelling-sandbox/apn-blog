@@ -1,4 +1,4 @@
-Description: This template deploys the infrastructure for the re:Invent ENT312 session. This template creates Lambda Functions required for later execution of the DMS Cloudformation Implimentation
+Description: This template deploys the infrastructure for the re:Invent ENT312 session. This template creates Lambda Functions required for later execution of the DMS Cloudformation Implementation
 Parameters:
   S3Bucket:
     Description: "This will be the bucket name which contains the source code for the Lambda Function"
