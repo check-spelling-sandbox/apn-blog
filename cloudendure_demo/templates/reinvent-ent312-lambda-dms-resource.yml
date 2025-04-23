@@ -18,7 +18,7 @@ Parameters:
   SourcePublicSubnets:
     Type: String
     Description: Source Public Subnets
-  DMSReplciationInstanceClass:
+  DMSReplicationInstanceClass:
     Type: String
     Description: Replication Instance Type
     Default: dms.t2.medium
@@ -159,7 +159,7 @@ Resources:
         SourcePublicSubnets: !Ref SourcePublicSubnets
         DMSCreateReplicationSubnetGroupFunctionARN: !GetAtt DMSCreateReplicationSubnetGroupFunction.Arn
         DMSreplicationInstanceWatcherFunctionARN: !GetAtt DMSreplicationInstanceWatcherFunction.Arn
-        DMSReplciationInstanceClass: !Ref DMSReplciationInstanceClass
+        DMSReplicationInstanceClass: !Ref DMSReplicationInstanceClass
         DMScreateReplicationInstanceFunctionARN: !GetAtt DMScreateReplicationInstanceFunction.Arn
         DMScreateEndpointFunctionARN: !GetAtt DMScreateEndpointFunction.Arn
         DMScreateReplicationTaskFunctionARN: !GetAtt DMScreateReplicationTaskFunction.Arn

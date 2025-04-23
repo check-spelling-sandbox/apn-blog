@@ -30,7 +30,7 @@ Parameters:
   DMSMigrationTaskStartFunctionARN:
     Type: String
     Description: ARN For DMS Migration Task Manager
-  DMSReplciationInstanceClass:
+  DMSReplicationInstanceClass:
     Type: String
     Description: Class of Instance Used in DMS Replication Instance
     Default: dms.t2.medium
@@ -101,7 +101,7 @@ Resources:
     Properties:
       ServiceToken: !Ref DMScreateReplicationInstanceFunctionARN
       Region: !Ref "AWS::Region"
-      ReplicationInstanceClass: !Ref DMSReplciationInstanceClass
+      ReplicationInstanceClass: !Ref DMSReplicationInstanceClass
       ReplicationInstanceIdentifier: DMSReplicationInstance
       ReplicationSubnetGroupIdentifier: !GetAtt ReplicationDestPrivateSubnets.ReplicationSubnetGroupIdentifier
       PubliclyAccessible: false
