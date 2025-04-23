@@ -2,13 +2,13 @@ Description: This template deploys the infrastructure for the re:Invent ENT312 s
 Parameters:
   SourcePublicSubnets:
     Type: String
-    Description: Comma Seperated List of Subnet IDs
+    Description: Comma Separated List of Subnet IDs
   DestinationPublicSubnets:
     Type: String
-    Description: Comma Seperated List of Subnet IDs
+    Description: Comma Separated List of Subnet IDs
   DestinationPrivateSubnets:
     Type: String
-    Description: Comma Seperated List of Subnet IDs
+    Description: Comma Separated List of Subnet IDs
   DMScreateReplicationInstanceFunctionARN:
     Type: String
     Description: DMS Replication instance Create Function ARN
